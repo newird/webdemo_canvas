@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Project</title>
+  <style>
+    /* 设定canvas的大小 */
+    #canvas {
+      width: 1920;
+      height: 1200;
+      border: 1px solid black;
+    }
+
+    #context-menu {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+    #context-menu a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+        padding: 10px;
+        font-size: 18px;  // 增大字体
+        cursor: pointer;
+    }
+    #context-menu a:hover {
+        background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas" width="1920" height="1200"></canvas>
+  <div id="context-menu" style="display: none; position: absolute; background-color: #fff; border: 1px solid #ddd;">
+    <a href="#" id="item1">Item 1</a>
+    <a href="#" id="item2">Item 2</a>
+    <a href="#" id="item3">Item 3</a>
+</div>
+
+  <script src="main.js"></script>
+</body>
+</html>
